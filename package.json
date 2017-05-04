@@ -4,7 +4,8 @@
   "description": "Iranian official brand colors in one place at http://www.brandcolors.ir",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint .",
+    "dev": "node ./server/server.js"
   },
   "repository": {
     "type": "git",
