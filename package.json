@@ -1,0 +1,26 @@
+{
+  "name": "brandcolorsir",
+  "version": "1.0.0",
+  "description": "Iranian official brand colors in one place at http://www.brandcolors.ir",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmosawy/brandcolorsir.git"
+  },
+  "keywords": [
+    "brandcolors",
+    "color",
+    "palette",
+    "iranian",
+    "brand"
+  ],
+  "author": "Jeff Mosawy <jmosawy@gmail.com (http://www.jmosawy.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jmosawy/brandcolorsir/issues"
+  },
+  "homepage": "https://github.com/jmosawy/brandcolorsir#readme"
+}
