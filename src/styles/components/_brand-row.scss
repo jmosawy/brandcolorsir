@@ -1,0 +1,31 @@
+.brand-row {
+  @extend %clearfix;
+  background-color: #ffffff;
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+
+  &__brand-title {
+    @extend %fontFamily;
+    float: left;
+    width: 218px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #607D8B;
+    margin-top: 20px;
+  }
+
+  &__brand-colors {
+    @extend %clearfix;
+    float: left;
+    width: calc(100% - 218px);
+
+    .color-box {
+      float: left;
+    }
+  }
+
+  &:not(:last-child) {
+    border-bottom: 1px solid #CFD8DC;
+  }
+}
