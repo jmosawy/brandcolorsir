@@ -29,5 +29,10 @@
         return (this.text === '');
       },
     },
+    watch: {
+      text: function (value) {
+        this.$emit('searchText', value);
+      },
+    },
   };
 </script>

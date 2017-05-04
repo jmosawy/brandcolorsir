@@ -3,13 +3,13 @@
     <section class="search">
       <div class="container">
         <div class="box-1">
-          <search-box></search-box>
+          <search-box @searchText="filterSearch"></search-box>
         </div>
       </div>
     </section>
     <section class="brand">
       <div class="container">
-        <brand-row v-for="item in colorData">
+        <brand-row v-for="item in filteredResults">
           <h2 slot="title">{{ item.name }}</h2>
 
           <template v-for="color in item.colors">
@@ -23,12 +23,15 @@
 
 <script>
   /* eslint-disable object-shorthand */
+  /* eslint-disable arrow-body-style */
+  /* eslint-disable no-console */
 
   import Clipboard from 'clipboard';
 
   import SearchBox from '../components/search-box.vue';
   import BrandRow from '../components/brand-row.vue';
   import ColorBox from '../components/color-box.vue';
+  import EventBus from '../EventBus';
 
   import colorData from '../assets/data.json';
 
@@ -36,7 +39,16 @@
     data() {
       return {
         colorData: colorData,
+        searchedTerm: '',
       };
+    },
+    computed: {
+      filteredResults: function () {
+        const self = this;
+        return self.colorData.filter((color) => {
+          return color.name.toLowerCase().indexOf(self.searchedTerm.toLowerCase()) !== -1;
+        });
+      },
     },
     components: {
       SearchBox,
@@ -45,8 +57,15 @@
     },
     created: function () {
       const clipboard = new Clipboard('.color-box');
-      clipboard.on('success', () => {
+      clipboard.on('success', (e) => {
+        EventBus.$emit('color.copied', e.text);
       });
+    },
+    methods: {
+      filterSearch: function (val) {
+        console.log(val);
+        this.searchedTerm = val;
+      },
     },
   };
 </script>
