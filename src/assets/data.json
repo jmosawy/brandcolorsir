@@ -1,0 +1,25 @@
+[
+  {
+    "name": "Aparat",
+    "colors": [
+      "#E0E0E0",
+      "#AEC0FF",
+      "#00A1CD"
+    ]
+  },
+  {
+    "name": "Mihanblog",
+    "colors": [
+      "#ACAC1A",
+      "#00A1CD"
+    ]
+  },
+  {
+    "name": "Raad",
+    "colors": [
+      "#0CAC1A",
+      "#0010D3",
+      "#988AAC"
+    ]
+  }
+]
