@@ -2,24 +2,95 @@
   {
     "name": "Aparat",
     "colors": [
-      "#E0E0E0",
-      "#AEC0FF",
-      "#00A1CD"
+      "#ea1d5d",
+      "#231f20"
+    ]
+  },
+  {
+    "name": "Cloob",
+    "colors": [
+      "#3aaa35"
+    ]
+  },
+  {
+    "name": "Persiangig",
+    "colors": [
+      "#71cffb"
+    ]
+  },
+  {
+    "name": "Raadsense",
+    "colors": [
+      "#034ea1",
+      "#ffd300",
+      "#f26f21",
+      "#2d2b51"
     ]
   },
   {
     "name": "Mihanblog",
     "colors": [
-      "#ACAC1A",
-      "#00A1CD"
+      "#52B1E7"
     ]
   },
   {
-    "name": "Raad",
+    "name": "Zarinpal",
     "colors": [
-      "#0CAC1A",
-      "#0010D3",
-      "#988AAC"
+      "#fdc928"
+    ]
+  },
+  {
+    "name": "Shatel",
+    "colors": [
+      "#005392",
+      "#f26322",
+      "#56C45F"
+    ]
+  },
+  {
+    "name": "AsiaTech",
+    "colors": [
+      "#f0ad4e",
+      "#428bca",
+      "#d9534f"
+    ]
+  },
+  {
+    "name": "Sepanta",
+    "colors": [
+      "#f08000",
+      "#555555"
+    ]
+  },
+  {
+    "name": "HiWeb",
+    "colors": [
+      "#DF0022",
+      "#939393"
+    ]
+  },
+  {
+    "name": "Mobinnet",
+    "colors": [
+      "#6eb214"
+    ]
+  },
+  {
+    "name": "Sabanet",
+    "colors": [
+      "#da1f26"
+    ]
+  },
+  {
+    "name": "Pishgaman",
+    "colors": [
+      "#cd2122"
+    ]
+  },
+  {
+    "name": "Hamsaa",
+    "colors": [
+      "#becd01"
     ]
   }
 ]
