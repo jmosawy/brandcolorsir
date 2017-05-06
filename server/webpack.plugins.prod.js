@@ -3,6 +3,9 @@
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+
+const COPYRIGHT_TEXT = 'Copyright 2017\nCode by Jeff Mosawy\n\nhttp://www.jmosawy.com\nj@mosawy.net';
 
 module.exports = [
   new webpack.optimize.CommonsChunkPlugin({
@@ -19,6 +22,10 @@ module.exports = [
     template: 'index.html',
     inject: true,
   }),
-  new webpack.HotModuleReplacementPlugin(),
+  new UglifyJsPlugin(),
   new ExtractTextPlugin('app.css?[contenthash]'),
+  new webpack.BannerPlugin({ banner: COPYRIGHT_TEXT }),
+  new webpack.DefinePlugin({
+    'process.env.NODE_ENV': JSON.stringify('production')
+  }),
 ];

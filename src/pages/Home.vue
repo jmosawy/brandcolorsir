@@ -24,7 +24,6 @@
 <script>
   /* eslint-disable object-shorthand */
   /* eslint-disable arrow-body-style */
-  /* eslint-disable no-console */
 
   import Clipboard from 'clipboard';
 
@@ -63,7 +62,6 @@
     },
     methods: {
       filterSearch: function (val) {
-        console.log(val);
         this.searchedTerm = val;
       },
     },
