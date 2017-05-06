@@ -4,7 +4,9 @@
   "description": "Iranian official brand colors in one place at http://www.brandcolors.ir",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint .",
+    "dev": "node ./server/server.js",
+    "build": "node ./server/build.js"
   },
   "repository": {
     "type": "git",
@@ -27,6 +29,7 @@
     "autoprefixer": "^6.7.7",
     "babel-core": "^6.24.1",
     "babel-loader": "^6.4.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.4.0",
     "browser-sync": "^2.18.8",
     "css-loader": "^0.28.0",
@@ -44,6 +47,7 @@
     "resolve-url-loader": "^2.0.2",
     "sass-loader": "^6.0.3",
     "style-loader": "^0.16.1",
+    "uglifyjs-webpack-plugin": "^0.4.3",
     "url-loader": "^0.5.8",
     "vue-loader": "^11.3.4",
     "vue-template-compiler": "^2.2.6",

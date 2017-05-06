@@ -17,14 +17,16 @@ module.exports = {
     },
     {
       test: /\.vue$/,
-      exclude: /node_modules/,
-      use: [
-        { loader: 'vue-loader' },
+      exclude: [
+        path.resolve(__dirname, '../node_modules'),
       ],
+      use: 'vue-loader',
     },
     {
       test: /\.js$/,
-      exclude: /node_modules/,
+      exclude: [
+        path.resolve(__dirname, '../node_modules'),
+      ],
       use: [
         { loader: 'babel-loader' },
       ],
@@ -37,7 +39,7 @@ module.exports = {
       use: ExtractTextPlugin.extract({
         fallback: 'style-loader',
         use: [
-          { loader: 'css-loader' },
+          { loader: 'css-loader', options: { minimize: true } },
           { loader: 'resolve-url-loader' },
           { loader: 'sass-loader?sourceMap' },
           { loader: 'postcss-loader' },

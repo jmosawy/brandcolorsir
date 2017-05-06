@@ -1,0 +1,45 @@
+%fullWidth {
+  display: block;
+  width: 100%;
+}
+
+%form-typography {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.form-input {
+  position: relative;
+
+  &__label {
+    position: absolute;
+    top: 50%;
+    left: 4px;
+    transform: translateY(-50%);
+    pointer-events: none;
+
+    label {
+      color: #B0BEC5;
+      @extend %fontFamily;
+      @extend %fullWidth;
+      @extend %form-typography;
+    }
+  }
+
+  &__text-box {
+    input {
+      border: none;
+      @extend %fontFamily;
+      @extend %fullWidth;
+      @extend %form-typography;
+      color: #455A64;
+      padding: 12px 4px;
+    }
+
+    &:after {
+      content: '';
+      border-bottom: 1px solid #263238;
+      @extend %fullWidth;
+    }
+  }
+}
