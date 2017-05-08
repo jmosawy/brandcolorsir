@@ -3,7 +3,7 @@
     <section class="search">
       <div class="container">
         <div class="box-1">
-          <search-box @searchText="filterSearch"></search-box>
+          <search-box @searchText="filterSearch">Search the brand name...</search-box>
         </div>
       </div>
     </section>
